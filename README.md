@@ -1,70 +1,80 @@
 # Getting Started with Create React App
+some basic info for Create React App
+ # Initialize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ npm install create-react-app -g
+ create-react-app .
 
-## Available Scripts
+ # File Set Up
 
-In the project directory, you can run:
+ Delete default source files
+ Add index.js
+ Add App.js
 
-### `yarn start`
+# index.js
+ import React from 'react'
+ import ReactDOM from 'react-dom'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ import App from "./App"
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ ReactDOM.render(<App/>, document.getElementById("root"))
 
-### `yarn test`
+ # App.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ import React, { useState } from "react";
+ import "./styles.css";
 
-### `yarn build`
+ const App = () => {
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     const [count, setCount] = useState(0)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     return (
+         <div>
+             <h1>Hello world"
+        </div>
+    );
+ }
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export default App; 
 
-### `yarn eject`
+# Start React 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# ReactJS
+A JS library for building user interfaces using declarative code
+Declarative code: each line declares what each element of the app is
+Benefit:
+Low learning curve 
+Reusable components – how a section of the UI should appear and function
+Performance
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Components – JS function that accepts inputs
+Component = section of a website
+Individual UI element
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Every React App will have an ID root
 
-## Learn More
+# JSX
+We use JSX to create components
+JavaScript XML – allows us to write HTML in ReactJS
+JSX- allows us to use JS expressions, use variables, and JS loops as well as if else statements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Styling React 
+Inline styling – specify style in an element
+CSS style sheet – import CSS file in your JS file
 
-### Code Splitting
+# Props 
+Arguments passed into React components  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Save data with Hooks
+Data storage device
+Used to expand functionality in your app by letting you “hook into” a react state and lifecycle features. 
 
-### Analyzing the Bundle Size
+# Save Data in you app using State
+States = parts of an app that can change. 
+Each component can have its own state
+As state changes components re-render
+Example likes going from 20 to 21 when a user likes a photo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
